@@ -4,4 +4,4 @@
 fishData <- read_csv("data/Gaeta_etal_CLC_data.csv")
 
 fishData %>%
-  mutate(length_cat = case_when(length >= 300 ~ "large", length <= 300 ~ "small")) 
+  mutate(length_cat = case_when(length >= 200 ~ "large", length <= 200 ~ "small")) 
